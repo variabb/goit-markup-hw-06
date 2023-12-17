@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 408px;
+        min-height: 584px;
+        background-color: #fcfcfc;
+        border-radius: 4px;
+      }
+      .modal-button-close {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+      }
+      .modal-close-btn-icon {
+        fill: #2e2f42;
+        display: inline-block;
+        vertical-align: middle;
+        pointer-events: none;
+      }
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <div class="backdrop">
+    <div class="modal">
+      <button class="modal-button-close">
+        <svg
+          class="modal-close-btn-icon"
+          width="24"
+          height="24"
+          aria-label="close"
+        >
+          <use xlink:href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <body></body>
+</html>
